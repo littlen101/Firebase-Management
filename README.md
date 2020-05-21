@@ -40,4 +40,4 @@ a good examples of using the tool
 
 Please reach out with other work or project you want to work on.  
 email&nbsp;&nbsp;&nbsp;&nbsp;: [psycthekid@gmail.com](psycthekid@gmail.com)  
-linkedin : [Nick Lewis](linkedin.com/in/nick-lewis-thekid)
+linkedin : [Nick Lewis](https://www.linkedin.com/in/nick-lewis-thekid)
