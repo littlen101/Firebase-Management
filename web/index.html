@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Tool to handle data inside of firebase">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="firebase_management">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+  <title>firebase_management</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+
+  <!-- Add Firebase products that you want to use -->
+  <!-- Authentication -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+
+  <!-- Analytics and Remote Config-->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script> <!-- needed for Remote -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-remote-config.js"></script>
+
+  <!-- Data Storage related -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+
+
+  <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+          apiKey: "AIzaSyBvUuKx2qtca-qpF4y4Kwr3g9LRXCFIsNY",
+          authDomain: "fir-management-c07b8.firebaseapp.com",
+          databaseURL: "https://fir-management-c07b8.firebaseio.com",
+          projectId: "fir-management-c07b8",
+          storageBucket: "fir-management-c07b8.appspot.com",
+          messagingSenderId: "858019995155",
+          appId: "1:858019995155:web:d86daeb72767eda3f6e9e6",
+          measurementId: "G-QCG9RN1472"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+  </script>
+
+  <!--  &lt;!&ndash; TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries &ndash;&gt;
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>-->
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
